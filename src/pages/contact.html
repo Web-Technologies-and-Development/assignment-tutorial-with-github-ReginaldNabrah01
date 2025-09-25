@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Semantic Site — Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style> :focus { outline: 2px solid; } </style>
+</head>
+<body>
+  <a href="#main">Skip to main content</a>
+  <header>
+    <h1>Contact</h1>
+    <nav aria-label="Primary">
+      <a href="/src/index.html">Home</a>
+      <a href="/src/pages/contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main id="main">
+    <form>
+      <div>
+        <label for="name">Full name</label>
+        <input id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <fieldset>
+        <legend>Topic</legend>
+        <label><input type="radio" name="topic" value="general" required /> General</label>
+        <label><input type="radio" name="topic" value="support" /> Support</label>
+      </fieldset>
+
+      <div>
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" required></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer>
+    <small>© 2025 Reginald Justin Tetteh Nabrah</small>
+  </footer>
+</body>
+</html>
